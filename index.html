@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ugly Pagination</title>
+
+    <script src="https://cdn.tiny.cloud/1/lmivia7dkpvezbmdj82pjyflln7pluv2ekfcnit02x7n4io1/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+            selector: '#area',
+            height: '600px',
+            toolbar: "pagination",
+            external_plugins: {
+                pagination: '/plugin/plugin.js'
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Ugly Pagination for TinyMCE</h1>
+    <p>If the editor doesn't load is probably the api key or script's src is outdated</p>
+    <div class="container">
+        <textarea id="area"></textarea>
+    </div>
+</body>
+</html>
